@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-color: rgb(232, 243, 255);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#logo {
+    height: 70px;
+}
+
+img {
+    height: 1px;
+}
+
+#nav1 {
+    display: flex;
+    justify-content: center;
+    background-color: #0f0f0f;
+    height: 90px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 3px;
+    width: 100%;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f0f0ff6;
+    height: 90px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin-inline: 10px;
+}
+
+ul {
+    display: flex;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav1 {
+    display: none;
+}
+
+.minerCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.minerCards h2 {
+    color: rgb(0, 0, 59);
+}
+
+.antminers, .whatsminer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 20px;
+    margin-inline: 80px;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    height: 250px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: #000000 0 10px 10px -10px;
+    transition: .3s;
+}
+
+.card img {
+    margin: 5px;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.card h3 {
+    margin: 15px;
+    margin-bottom: 40px;
+}
+
+.card p {
+    font-weight: 700;
+    color: #028649;
+    margin: 5px;
+    margin-left: 70px;
+}
+
+.divData {
+    display: flex;
+    flex-direction: column;
+}
+
+.divBotones {
+    display: flex;
+}
+
+
+button {
+  background: #00a775;
+  border-radius: 999px;
+  box-shadow: #00a775 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-top: 15px;
+}
+
+#info {
+    background-color: gray;
+    box-shadow: gray 0 10px 20px -10px;
+}
+
+select {
+    padding-inline: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 5px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 5em;
+    text-align: center;
+}
+
+footer i {
+    color: whitesmoke;
+    margin: .5em;
+}
+
+@media (max-width: 600px) {
+    #nav1 {
+        display: flex;
+    }
+    #nav2 {
+        display: none;
+    }
+
+    .antminers, .whatsminer {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        margin-inline: 0px;
+        justify-items: center;
+    }
+
+    .card {
+        background-color: white;
+        display: flex;
+        border-radius: 15px;
+        height: 250px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+}

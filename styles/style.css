@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-image: url(../media/background.webp);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    height: 65px;
+}
+
+img {
+    height: 1px;
+}
+
+#nav1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 80px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 3px;
+    width: 100%;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f0f0f;
+    height: 80px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+    margin-inline: 10px;
+}
+
+ul {
+    display: flex;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Div de Bienvenida */
+#welcome {
+    color: white;
+}
+
+.precioCripto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5em;
+}
+
+.coins, .btc, .eth {
+    display: flex;
+    align-items: center;
+}
+
+#imgBtc, #imgEth {
+    margin-inline: 5px;
+    height: 20px;
+}
+
+/* Div de Opciones para elegir */
+.opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(77, 120, 238, 0.15);  
+    backdrop-filter: blur(25px);
+    border-radius: 30px;
+    box-shadow: #000000 0 15px 20px -10px;
+}
+
+.ayudarte h2 {
+    margin: .7em;
+}
+
+#imgAsic, #imgPrest {
+    height: 60px;
+}
+
+#imgPrest {
+    border-radius: 100%;
+}
+
+#imgTool {
+    height: 60px;
+}
+
+
+button {
+  background: #028649;
+  border-radius: 999px;
+  box-shadow: #000000 0 5px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.reparacion, .tienda, .prestamo {
+    margin-top: 30px;
+    display: flex;
+    width: 250px;
+    height: 110px;
+} 
+
+.reparacion p, .tienda p, .prestamo p {
+    margin: 10px;
+}
+
+.reparacionData, .tiendaData, .prestData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-end
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    bottom: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 3em;
+    text-align: center;
+}
+
+footer i {
+    margin: .5em;
+}
+
+#tienda {
+    display: none;
+}
+
+#fb {
+    border-radius: 100%;
+    height: 30px;
+    margin: 5px;
+}
+
+#nav2 {
+    display: none;
+}
+
+
+@media (min-width: 450px) {
+    #nav2 {
+        display: flex;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.76);
+    }
+
+    #nav2:hover {
+        background-color: rgb(0, 0, 0);
+    }
+
+    #nav1 {
+        display: none;
+    }
+
+    .opciones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 850px;
+        margin-top: 20px;
+    }
+
+    .ayudarte {
+        text-align: center;
+    }
+    .ayudarte h2 {
+        margin-top: 55px;
+    }
+
+    .reparacion, .tienda, .prestamo {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+    }
+
+    footer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        bottom: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.534);
+        height: 3em;
+        text-align: center;
+    }
+
+    footer i {
+        margin: .5em;
+    }
+}

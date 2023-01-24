@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#logo {
+    height: 70px;
+}
+
+img {
+    height: 1px;
+}
+
+#nav1 {
+    display: flex;
+    justify-content: center;
+    background-color: #0f0f0f;
+    height: 90px;
+    align-items: center;
+    border-radius: 3px;
+    width: 100%;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f0f0ff6;
+    height: 90px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin-inline: 10px;
+}
+
+ul {
+    display: flex;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav1 {
+    display: none;
+}
+
+.reparacionContainer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+    background-image: linear-gradient(rgb(16, 58, 136),rgb(25, 120, 197));
+}
+
+.calculator {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+    width: 30%;
+    background-color: rgba(15, 15, 15, 0.63);
+    border-radius: 15px;
+    box-shadow: #000000 0 10px 15px -5px;
+    backdrop-filter: blur(25px);
+}
+
+.data {
+    margin-bottom: 1.6em;
+}
+
+.calculator h2 {
+    margin: 20px;
+}
+
+select {
+    color: white;
+    background-color: #0f0f0f;
+    padding: 3px;
+}
+
+.model, #repuesto {
+    margin-top: 20px;
+}
+
+#resultado {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: rgba(8, 44, 68, 0.637);
+    border-radius: 6px;
+    box-shadow: #00000050 0 3px 5px 2px;
+}
+
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    margin-top: 50px;
+    background-color: rgb(0, 122, 75);
+    border-radius: 20px ;
+    box-shadow: #00000050 0 3px 5px 2px;
+    margin-bottom: 2em;
+}
+
+#contacto i, #resultado h3{
+    margin: 10px;
+}
+
+#resultado p {
+    margin: 5px;
+}
+
+.titleResultado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divPrecio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(3, 236, 73);
+}
+
+.precio2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+
+    #nav1 {
+        display: flex;
+        border-radius: 0;
+    }
+
+    #nav2 {
+        display: none;
+    }
+
+    .calculator {
+        width: 80%;
+        height: auto;
+        min-height: 50%;
+    }
+}

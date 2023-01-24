@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Costos | Enmos S.A</title>
+    <meta name="description" content="Calcular precio de reparacion de Asics Antminers y Whatsminers">
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reparacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eabcc96f60.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <nav id="nav1">
+        <a href="./index.html"><img id="logo" src="media/blueLogo.png" alt="logo"></a>
+    </nav>
+    <nav id="nav2">
+        <a href="./index.html"><img id="logo" src="media/blueLogo.png" alt="logo"></a>
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a target="_blank" href="https://goo.gl/maps/MuJA77QNuMS9qHf29"><i class="fa-solid fa-location-dot"></i> Cómo llegar</a></li>
+            <li><a target="_blank" href="https://wa.me/message/EIJFVYAIBZVAO1"><i class="fa-solid fa-user"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="reparacionContainer">
+        <div class="calculator">
+            <div class="title">
+                <h2>Calcular costo</h2>
+            </div>
+            <div class="data">
+                <div class="model">
+                    <p>Por favor, selecciona el modelo:</p>
+                    <form action="#">
+                        <select name="lenguajes" id="selectModel">
+                            <option value="ava-1126">Seleccionar</option>
+                            <option value="ava-1126">Avalon 1126</option>
+                            <option value="ava-1166">Avalon 1166</option>
+                            <option value="ava-1066">Avalon 1066</option>
+                            <option value="ava-1246">Avalon 1246</option>
+                            <option value="wha-m20s">Whatsminer M20S</option>
+                            <option value="s19">S19 (No Pro)</option>
+                            <option value="inno-t2t">Innosilicon T2T</option>
+                            <option value="s9">Antminer S9</option>
+                            <option value="wha-m21s">Whatsminer M21S</option>
+                            <option value="t15">T15</option>
+                            <option value="inno-t3">Innosilicon T3</option>
+                            <option value="wha-m30s">Whatsminer M30S</option>
+                            <option value="t17">T17</option>
+                            <option value="s17">S17</option>
+                        </select>
+                    </form>
+                </div>
+                <div id="repuesto">
+                    <p>Que repuesto desea cambiar?</p>
+                    <form action="#">
+                        <select name="lenguajes" id="selectRepuesto">
+                            <option value="fuente">Seleccionar</option>
+                            <option value="fuente">Fuente</option>
+                            <option value="hashboard">Hashboard</option>
+                            <option value="controladora">Controladora</option>
+                        </select>
+                    </form>
+                </div>
+                <div id="resultado">
+                    <div class="titleResultado">
+                        <p>Producto:</p>
+                        <p><span id="repuestoSelected"></span> para <span id="modelSelected"></span></p>
+                    </div>
+                    <div class="divPrecio">
+                        <p>Precio:</p>
+                        <div class="precio2">
+                            <span id="precio"></span>
+                            <p>$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a target="_blank" href="https://wa.me/message/EIJFVYAIBZVAO1">
+                <div id="contacto">
+                    <p>Contacta conmigo</p>
+                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/reparacion.js"></script>
+</body>
+</html>
