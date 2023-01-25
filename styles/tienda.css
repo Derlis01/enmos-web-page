@@ -86,6 +86,7 @@ a {
     width: 350px;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 
 .card:hover {
