@@ -84,15 +84,15 @@ function setPricesInitial() {
 
 
 
-// function alerta() {
-//     swal("Garantia en Paraguay", "Sin necesidad de enviar tu equipo a China", "success");
+function alerta() {
+    swal("Garantia en Paraguay", "Sin necesidad de enviar tu equipo a China", "success");
 
-// }
+}
 
-// function alertaPrest() {
-//     swal("Requisitos:", "•Mínimo una semana de préstamo, Si el precio fluctúa a menos del valor recibido tenes 72hs para pagar la diferencia sino tu btc será vendido.");
+function alertaPrest() {
+    swal("Requisitos:", "•Mínimo una semana de préstamo, Si el precio fluctúa a menos del valor recibido tenes 72hs para pagar la diferencia sino tu btc será vendido.");
 
-// }
+}
 
 
 
