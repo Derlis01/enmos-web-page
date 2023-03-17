@@ -8,7 +8,7 @@ Este proyecto fue un desafío para mí, ya que debía ser lowcost y optimizar al
 - Los precios de criptomonedas se obtienen de la API de Binance.
 
 ## Estilos
-- Se utiliza CSS puro sin ninguna librería externa para los estilos de la página web, lo que mejora el rendimiento y la compatibilidad.
+- El 90% de la web está hecho con CSS puro sin ninguna librería externa para los estilos de la página web, lo que mejora el rendimiento y la compatibilidad.
 
 ## Acceso a la página web
 El link de la página web es el siguiente: 
